@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="68.384712">
-<testcase classname="Login Action" name="Successful Login with Valid Credentials" time="68.38464">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="112.199408">
+<testcase classname="Login Action" name="Successful Login with Valid Credentials" time="112.199323">
 <system-out><![CDATA[Given User is on Home Page..................................................passed
 When User Navigate to LogIn Page............................................passed
 And User enters username and password.......................................passed
 Then User moves to new contact page.........................................passed
-Then user enters contact details "Viji" and "Raja" and "Tester".............passed
+Then user enters contact details............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login Action" name="Successful LogOut" time="0.000072">
+<testcase classname="Login Action" name="Successful LogOut" time="0.000085">
 <system-out><![CDATA[When User LogOut from the Application.......................................passed
 Then Message displayed LogOut Successfully..................................passed
 ]]></system-out>

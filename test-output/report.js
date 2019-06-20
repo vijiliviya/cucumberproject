@@ -36,7 +36,7 @@ formatter.step({
     },
     {
       "line": 8,
-      "value": "# data Driven by using Data Table concept below"
+      "value": "# data Driven by using Data Table(List) concept below"
     }
   ],
   "line": 9,
@@ -58,79 +58,103 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 12,
-  "name": "user enters contact details \"Viji\" and \"Raja\" and \"Tester\"",
+  "comments": [
+    {
+      "line": 12,
+      "value": "#data driven by using scenario without example keyword below to pass data"
+    },
+    {
+      "line": 13,
+      "value": "#Then user enters contact details \"Viji\" and \"Raja\" and \"Tester\""
+    },
+    {
+      "line": 14,
+      "value": "#data Driven by using Data Table(Map) concept below"
+    }
+  ],
+  "line": 15,
+  "name": "user enters contact details",
+  "rows": [
+    {
+      "cells": [
+        "First Name",
+        "Last Name",
+        "Position"
+      ],
+      "line": 16
+    },
+    {
+      "cells": [
+        "Vijayalakshmi",
+        "Raja",
+        "QA"
+      ],
+      "line": 17
+    },
+    {
+      "cells": [
+        "Neelam",
+        "Verma",
+        "QA"
+      ],
+      "line": 18
+    },
+    {
+      "cells": [
+        "Mani",
+        "Mohan",
+        "Developer"
+      ],
+      "line": 19
+    },
+    {
+      "cells": [
+        "Divya",
+        "selva",
+        "API Tester"
+      ],
+      "line": 20
+    }
+  ],
   "keyword": "Then "
 });
 formatter.match({
   "location": "stepfile.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 14191487820,
+  "duration": 7542235433,
   "status": "passed"
 });
 formatter.match({
   "location": "stepfile.user_Navigate_to_LogIn_Page()"
 });
 formatter.result({
-  "duration": 9018146595,
+  "duration": 13440885323,
   "status": "passed"
 });
 formatter.match({
   "location": "stepfile.user_enters_and(DataTable)"
 });
 formatter.result({
-  "duration": 2640649953,
+  "duration": 2362268840,
   "status": "passed"
 });
 formatter.match({
   "location": "stepfile.user_moves_to_new_contact_page()"
 });
 formatter.result({
-  "duration": 5144898144,
+  "duration": 4949621024,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Viji",
-      "offset": 29
-    },
-    {
-      "val": "Raja",
-      "offset": 40
-    },
-    {
-      "val": "Tester",
-      "offset": 51
-    }
-  ],
-  "location": "stepfile.user_enters_contact_details_and_and(String,String,String)"
+  "location": "stepfile.user_enters_contact_details(DataTable)"
 });
 formatter.result({
-  "duration": 37389457633,
+  "duration": 83904312694,
   "status": "passed"
 });
 formatter.scenario({
-  "comments": [
-    {
-      "line": 14,
-      "value": "#Examples:"
-    },
-    {
-      "line": 15,
-      "value": "#| username| password | firstname  | lastname  | position |"
-    },
-    {
-      "line": 16,
-      "value": "#| vijayalakshmiraja88@gmail.com | jesus@123 | viji | Raja | Tester |"
-    },
-    {
-      "line": 17,
-      "value": "# | username2 | password2 |"
-    }
-  ],
-  "line": 19,
+  "line": 24,
   "name": "Successful LogOut",
   "description": "",
   "id": "login-action;successful-logout",
@@ -138,12 +162,12 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 20,
+  "line": 25,
   "name": "User LogOut from the Application",
   "keyword": "When "
 });
 formatter.step({
-  "line": 21,
+  "line": 26,
   "name": "Message displayed LogOut Successfully",
   "keyword": "Then "
 });
@@ -151,14 +175,14 @@ formatter.match({
   "location": "stepfile.user_LogOut_from_the_Application()"
 });
 formatter.result({
-  "duration": 46962,
+  "duration": 57225,
   "status": "passed"
 });
 formatter.match({
   "location": "stepfile.message_displayed_LogOut_Successfully()"
 });
 formatter.result({
-  "duration": 24881,
+  "duration": 27991,
   "status": "passed"
 });
 });
