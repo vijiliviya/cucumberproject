@@ -205,13 +205,31 @@ Thread.sleep(3000);
 	@When("^User LogOut from the Application$")
 	public void user_LogOut_from_the_Application()  {
 		// Write code here that turns the phrase above into concrete actions
+		System.out.println("LogOut from the Application");
 
 	}
 
 	@Then("^Message displayed LogOut Successfully$")
 	public void message_displayed_LogOut_Successfully() {
 		// Write code here that turns the phrase above into concrete actions
+System.out.println("Message displayed LogOut Successfully");
+	}
+	@Then("^Refresh the browser$")
+	public void refresh_the_browser() {
+	    // Write code here that turns the phrase above into concrete actions
+	    System.out.println("Refresh the browser");
+	}
 
+	@Then("^Go to setting menu$")
+	public void go_to_setting_menu() {
+	    // Write code here that turns the phrase above into concrete actions
+		System.out.println("Go to setting menu");
+	}
+
+	@Then("^Brower closed$")
+	public void brower_closed()  {
+	    // Write code here that turns the phrase above into concrete actions
+		System.out.println("Brower closed");
 	}
 
 }

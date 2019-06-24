@@ -1,6 +1,5 @@
 Feature: Login Action
- 
-Scenario: Successful Login with Valid Credentials
+ Scenario: Successful Login with Valid Credentials
  Given User is on Home Page
  When User Navigate to LogIn Page
  #data driven by using scenario without example keyword below to pass data
@@ -18,10 +17,12 @@ Scenario: Successful Login with Valid Credentials
  | Neelam | Verma | QA |
  | Mani | Mohan | Developer |
  | Divya | selva |API Tester  |
-     
+ Then Refresh the browser
  
-
 Scenario: Successful LogOut
+Then Go to setting menu
  When User LogOut from the Application
  Then Message displayed LogOut Successfully
+ Then Brower closed
+ 
  
